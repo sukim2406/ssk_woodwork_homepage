@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../controllers/global_controller.dart' as global;
+
 class AppbarMobileWidget extends StatefulWidget {
   const AppbarMobileWidget({Key? key}) : super(key: key);
 
@@ -14,6 +16,18 @@ class _AppbarMobileWidgetState extends State<AppbarMobileWidget> {
       height: MediaQuery.of(context).size.height * .1,
       width: MediaQuery.of(context).size.width,
       color: Colors.white,
+      child: Row(
+        children: [
+          SizedBox(
+            width: MediaQuery.of(context).size.width * .5,
+            height: MediaQuery.of(context).size.height * .1,
+            child: FittedBox(
+              fit: BoxFit.fitHeight,
+              child: Text(global.titleTxt[global.languageInt]),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

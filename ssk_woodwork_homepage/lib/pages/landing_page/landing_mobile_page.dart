@@ -18,7 +18,7 @@ class _LandingMobilePageState extends State<LandingMobilePage> {
       color: Colors.black,
       child: Column(
         children: [
-          AppbarWidget(),
+          AppbarWidget(), // height : .1 * h
         ],
       ),
     );
