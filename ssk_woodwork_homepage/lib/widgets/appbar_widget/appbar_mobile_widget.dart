@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../controllers/global_controller.dart' as global;
 
@@ -23,7 +24,10 @@ class _AppbarMobileWidgetState extends State<AppbarMobileWidget> {
             height: MediaQuery.of(context).size.height * .1,
             child: FittedBox(
               fit: BoxFit.fitHeight,
-              child: Text(global.titleTxt[global.languageInt]),
+              child: Text(
+                global.titleTxt[global.languageInt],
+                style: GoogleFonts.jua(),
+              ),
             ),
           ),
         ],
