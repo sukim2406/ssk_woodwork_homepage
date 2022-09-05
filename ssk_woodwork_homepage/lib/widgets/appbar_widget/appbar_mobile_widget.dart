@@ -20,6 +20,9 @@ class _AppbarMobileWidgetState extends State<AppbarMobileWidget> {
       child: Row(
         children: [
           SizedBox(
+            width: MediaQuery.of(context).size.width * .03,
+          ),
+          SizedBox(
             width: MediaQuery.of(context).size.width * .5,
             height: MediaQuery.of(context).size.height * .1,
             child: FittedBox(
@@ -29,6 +32,15 @@ class _AppbarMobileWidgetState extends State<AppbarMobileWidget> {
                 style: GoogleFonts.jua(),
               ),
             ),
+          ),
+          Expanded(
+            child: Container(),
+          ),
+          const Icon(
+            Icons.more_vert_outlined,
+          ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width * .03,
           ),
         ],
       ),
