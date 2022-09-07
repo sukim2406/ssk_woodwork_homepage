@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../widgets/appbar_widget/appbar_widget.dart';
+import '../../widgets/welcome_widget/welcome_widget.dart';
 
 class LandingMobilePage extends StatefulWidget {
   const LandingMobilePage({Key? key}) : super(key: key);
@@ -17,8 +18,9 @@ class _LandingMobilePageState extends State<LandingMobilePage> {
       height: MediaQuery.of(context).size.height,
       color: Colors.black,
       child: Column(
-        children: [
+        children: const [
           AppbarWidget(), // height : .1 * h
+          WelcomeWidget(), // height : .8 * h
         ],
       ),
     );
