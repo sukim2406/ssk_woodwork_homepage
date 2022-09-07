@@ -12,15 +12,27 @@ class LandingTabletPage extends StatefulWidget {
 class _LandingTabletPageState extends State<LandingTabletPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height,
-      color: Colors.amber,
-      child: Column(
-        children: [
-          AppbarWidget(),
-        ],
+    return Scaffold(
+      body: Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        color: Colors.black,
+        child: Column(
+          children: const [
+            AppbarWidget(),
+          ],
+        ),
       ),
     );
+    // return Container(
+    //   width: MediaQuery.of(context).size.width,
+    //   height: MediaQuery.of(context).size.height,
+    //   color: Colors.amber,
+    //   child: Column(
+    //     children: const [
+    //       AppbarWidget(),
+    //     ],
+    //   ),
+    // );
   }
 }

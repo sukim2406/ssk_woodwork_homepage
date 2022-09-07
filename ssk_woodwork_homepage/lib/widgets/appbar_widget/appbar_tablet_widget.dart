@@ -14,20 +14,34 @@ class _AppbarTabletWidgetState extends State<AppbarTabletWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * .1,
+      height: MediaQuery.of(context).size.height * .15,
       width: MediaQuery.of(context).size.width,
-      color: Colors.white,
+      color: Colors.black,
       child: Column(
         children: [
           SizedBox(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * .05,
+            height: MediaQuery.of(context).size.height * .1,
             child: FittedBox(
               fit: BoxFit.fitHeight,
               child: Text(
                 global.titleTxt[global.languageInt],
-                style: GoogleFonts.jua(),
+                style: GoogleFonts.gugi(
+                  color: Colors.white,
+                ),
               ),
+            ),
+          ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height * .5,
+            child: Row(
+              children: const [
+                FittedBox(
+                  fit: BoxFit.fitHeight,
+                  child: Text('temp'),
+                ),
+              ],
             ),
           ),
         ],

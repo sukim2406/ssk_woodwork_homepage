@@ -3,4 +3,8 @@ const kTabletBreakPoint = 768.0;
 const kDesktopBreakPoint = 1440.0;
 
 const languageInt = 0;
-const titleTxt = ['소며듦', 'simfused'];
+const titleTxt = ['스며듦', 'Infused'];
+const menuItems = [
+  [''],
+  ['']
+];
