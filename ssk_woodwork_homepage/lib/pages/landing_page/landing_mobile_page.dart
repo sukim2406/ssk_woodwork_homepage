@@ -13,15 +13,17 @@ class LandingMobilePage extends StatefulWidget {
 class _LandingMobilePageState extends State<LandingMobilePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height,
-      color: Colors.black,
-      child: Column(
-        children: const [
-          AppbarWidget(), // height : .1 * h
-          WelcomeWidget(), // height : .8 * h
-        ],
+    return Scaffold(
+      body: Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        color: Colors.white,
+        child: Column(
+          children: const [
+            AppbarWidget(), // height : .1 * h
+            WelcomeWidget(), // height : .8 * h
+          ],
+        ),
       ),
     );
   }

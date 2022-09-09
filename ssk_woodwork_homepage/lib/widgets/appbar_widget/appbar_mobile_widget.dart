@@ -20,27 +20,31 @@ class _AppbarMobileWidgetState extends State<AppbarMobileWidget> {
       child: Row(
         children: [
           SizedBox(
-            width: MediaQuery.of(context).size.width * .03,
+            width: MediaQuery.of(context).size.width * .1,
+          ),
+          Expanded(
+            child: Container(),
           ),
           SizedBox(
             width: MediaQuery.of(context).size.width * .5,
-            height: MediaQuery.of(context).size.height * .1,
+            height: MediaQuery.of(context).size.height * .08,
             child: FittedBox(
               fit: BoxFit.fitHeight,
               child: Text(
                 global.titleTxt[global.languageInt],
-                style: GoogleFonts.jua(),
+                style: GoogleFonts.gugi(),
               ),
             ),
           ),
           Expanded(
             child: Container(),
           ),
-          const Icon(
-            Icons.more_vert_outlined,
-          ),
           SizedBox(
-            width: MediaQuery.of(context).size.width * .03,
+            width: MediaQuery.of(context).size.width * .1,
+            height: MediaQuery.of(context).size.height * .08,
+            child: const Icon(
+              Icons.more_vert_outlined,
+            ),
           ),
         ],
       ),

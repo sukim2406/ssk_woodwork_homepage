@@ -16,7 +16,7 @@ class _LandingTabletPageState extends State<LandingTabletPage> {
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        color: Colors.black,
+        color: Colors.white,
         child: Column(
           children: const [
             AppbarWidget(),

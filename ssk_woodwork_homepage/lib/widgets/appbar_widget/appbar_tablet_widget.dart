@@ -16,7 +16,7 @@ class _AppbarTabletWidgetState extends State<AppbarTabletWidget> {
     return Container(
       height: MediaQuery.of(context).size.height * .15,
       width: MediaQuery.of(context).size.width,
-      color: Colors.black,
+      color: Colors.white,
       child: Column(
         children: [
           SizedBox(
