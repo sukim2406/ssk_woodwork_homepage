@@ -28,12 +28,31 @@ class _AppbarMobileWidgetState extends State<AppbarMobileWidget> {
           SizedBox(
             width: MediaQuery.of(context).size.width * .5,
             height: MediaQuery.of(context).size.height * .08,
-            child: FittedBox(
-              fit: BoxFit.fitHeight,
-              child: Text(
-                global.titleTxt[global.languageInt],
-                style: GoogleFonts.gugi(),
-              ),
+            child: Row(
+              children: [
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .07,
+                  child: FittedBox(
+                    fit: BoxFit.fitHeight,
+                    child: Text(
+                      global.titleTxt[global.languageInt],
+                      style: GoogleFonts.gugi(),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .05,
+                  child: FittedBox(
+                    fit: BoxFit.fitHeight,
+                    child: Text(
+                      global.titleTxt2[global.languageInt],
+                      style: GoogleFonts.gugi(
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
           Expanded(
