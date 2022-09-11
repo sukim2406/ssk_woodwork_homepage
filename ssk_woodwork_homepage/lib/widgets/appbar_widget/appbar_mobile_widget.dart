@@ -29,6 +29,7 @@ class _AppbarMobileWidgetState extends State<AppbarMobileWidget> {
             width: MediaQuery.of(context).size.width * .5,
             height: MediaQuery.of(context).size.height * .08,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
                   height: MediaQuery.of(context).size.height * .07,
