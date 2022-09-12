@@ -24,15 +24,5 @@ class _LandingTabletPageState extends State<LandingTabletPage> {
         ),
       ),
     );
-    // return Container(
-    //   width: MediaQuery.of(context).size.width,
-    //   height: MediaQuery.of(context).size.height,
-    //   color: Colors.amber,
-    //   child: Column(
-    //     children: const [
-    //       AppbarWidget(),
-    //     ],
-    //   ),
-    // );
   }
 }

@@ -16,25 +16,42 @@ class _AppbarTabletWidgetState extends State<AppbarTabletWidget> {
     return Container(
       height: MediaQuery.of(context).size.height * .15,
       width: MediaQuery.of(context).size.width,
-      color: Colors.white,
+      color: Colors.grey.shade200,
       child: Column(
         children: [
-          SizedBox(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * .1,
-            child: FittedBox(
-              fit: BoxFit.fitHeight,
-              child: Text(
-                global.titleTxt[global.languageInt],
-                style: GoogleFonts.gugi(
-                  color: Colors.white,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                // width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height * .1,
+                child: FittedBox(
+                  fit: BoxFit.fitHeight,
+                  child: Text(
+                    global.titleTxt[global.languageInt],
+                    style: GoogleFonts.gugi(
+                      color: Colors.black,
+                    ),
+                  ),
                 ),
               ),
-            ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * .07,
+                child: FittedBox(
+                  fit: BoxFit.fitHeight,
+                  child: Text(
+                    global.titleTxt2[global.languageInt],
+                    style: GoogleFonts.gugi(
+                      color: Colors.grey,
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
           SizedBox(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * .5,
+            height: MediaQuery.of(context).size.height * .05,
             child: Row(
               children: const [
                 FittedBox(
