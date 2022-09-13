@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../controllers/global_controller.dart' as global;
 
+import '../menu_item_widget/menu_item_widget.dart';
+
 class AppbarTabletWidget extends StatefulWidget {
   const AppbarTabletWidget({Key? key}) : super(key: key);
 
@@ -54,9 +56,17 @@ class _AppbarTabletWidgetState extends State<AppbarTabletWidget> {
             height: MediaQuery.of(context).size.height * .05,
             child: Row(
               children: const [
-                FittedBox(
-                  fit: BoxFit.fitHeight,
-                  child: Text('temp'),
+                MenuItemWidget(
+                  index: 0,
+                ),
+                MenuItemWidget(
+                  index: 1,
+                ),
+                MenuItemWidget(
+                  index: 2,
+                ),
+                MenuItemWidget(
+                  index: 3,
                 ),
               ],
             ),
