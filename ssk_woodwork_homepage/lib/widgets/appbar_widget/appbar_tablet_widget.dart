@@ -68,6 +68,15 @@ class _AppbarTabletWidgetState extends State<AppbarTabletWidget> {
                 MenuItemWidget(
                   index: 3,
                 ),
+                MenuItemWidget(
+                  index: 4,
+                ),
+                MenuItemWidget(
+                  index: 5,
+                ),
+                MenuItemWidget(
+                  index: 6,
+                ),
               ],
             ),
           ),

@@ -11,11 +11,17 @@ const menuItems = [
     '주문제작',
     '작품',
     '교육',
+    '게시판',
+    '로그인',
+    '장바구니',
   ],
   [
     'about',
     'order',
     'gallery',
     'class',
+    'QnA',
+    'login',
+    'cart',
   ]
 ];
