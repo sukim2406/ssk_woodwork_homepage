@@ -4,6 +4,7 @@ import '../responsive_layout_widget.dart';
 
 import '../appbar_widget/appbar_mobile_widget.dart';
 import '../appbar_widget/appbar_tablet_widget.dart';
+import '../appbar_widget/appbar_desktop_widget.dart';
 
 class AppbarWidget extends StatefulWidget {
   const AppbarWidget({Key? key}) : super(key: key);
@@ -18,6 +19,7 @@ class _AppbarWidgetState extends State<AppbarWidget> {
     return const ResponsiveLayoutWidget(
       mobile: AppbarMobileWidget(),
       tablet: AppbarTabletWidget(),
+      desktop: AppbarDesktopWidget(),
     );
   }
 }
