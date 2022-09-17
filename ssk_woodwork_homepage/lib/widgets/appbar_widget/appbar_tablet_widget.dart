@@ -55,27 +55,41 @@ class _AppbarTabletWidgetState extends State<AppbarTabletWidget> {
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height * .05,
             child: Row(
-              children: const [
+              children: [
                 MenuItemWidget(
                   index: 0,
+                  width: (MediaQuery.of(context).size.width /
+                      global.menuItems[global.languageInt].length),
                 ),
                 MenuItemWidget(
                   index: 1,
+                  width: (MediaQuery.of(context).size.width /
+                      global.menuItems[global.languageInt].length),
                 ),
                 MenuItemWidget(
                   index: 2,
+                  width: (MediaQuery.of(context).size.width /
+                      global.menuItems[global.languageInt].length),
                 ),
                 MenuItemWidget(
                   index: 3,
+                  width: (MediaQuery.of(context).size.width /
+                      global.menuItems[global.languageInt].length),
                 ),
                 MenuItemWidget(
                   index: 4,
+                  width: (MediaQuery.of(context).size.width /
+                      global.menuItems[global.languageInt].length),
                 ),
                 MenuItemWidget(
                   index: 5,
+                  width: (MediaQuery.of(context).size.width /
+                      global.menuItems[global.languageInt].length),
                 ),
                 MenuItemWidget(
                   index: 6,
+                  width: (MediaQuery.of(context).size.width /
+                      global.menuItems[global.languageInt].length),
                 ),
               ],
             ),

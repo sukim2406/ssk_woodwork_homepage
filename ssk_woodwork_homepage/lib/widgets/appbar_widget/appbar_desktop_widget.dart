@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../controllers/global_controller.dart' as global;
+import '../menu_item_widget/menu_item_widget.dart';
 
 class AppbarDesktopWidget extends StatefulWidget {
   const AppbarDesktopWidget({super.key});
@@ -23,22 +24,82 @@ class _AppbarDesktopWidgetState extends State<AppbarDesktopWidget> {
             width: MediaQuery.of(context).size.width * .05,
           ),
           SizedBox(
-            height: MediaQuery.of(context).size.height * .08,
             width: MediaQuery.of(context).size.width * .15,
-            child: FittedBox(
-              fit: BoxFit.fitHeight,
-              child: Text(
-                global.titleTxt[global.languageInt],
-                style: GoogleFonts.gugi(
-                  color: Colors.black,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .08,
+                  child: FittedBox(
+                    fit: BoxFit.fitHeight,
+                    child: Text(
+                      global.titleTxt[global.languageInt],
+                      style: GoogleFonts.gugi(
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
                 ),
-              ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .05,
+                  child: FittedBox(
+                    fit: BoxFit.fitHeight,
+                    child: Text(
+                      global.titleTxt2[global.languageInt],
+                      style: GoogleFonts.gugi(
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ),
+                )
+              ],
             ),
           ),
-          Container(
-            width: MediaQuery.of(context).size.width * .8,
+          SizedBox(
+            width: MediaQuery.of(context).size.width * .05,
+          ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width * .75,
             height: MediaQuery.of(context).size.height * .1,
-            color: Colors.black,
+            child: Row(
+              children: [
+                MenuItemWidget(
+                  index: 0,
+                  width: ((MediaQuery.of(context).size.width * .75) /
+                      global.menuItems[global.languageInt].length),
+                ),
+                MenuItemWidget(
+                  index: 1,
+                  width: ((MediaQuery.of(context).size.width * .75) /
+                      global.menuItems[global.languageInt].length),
+                ),
+                MenuItemWidget(
+                  index: 2,
+                  width: ((MediaQuery.of(context).size.width * .75) /
+                      global.menuItems[global.languageInt].length),
+                ),
+                MenuItemWidget(
+                  index: 3,
+                  width: ((MediaQuery.of(context).size.width * .75) /
+                      global.menuItems[global.languageInt].length),
+                ),
+                MenuItemWidget(
+                  index: 4,
+                  width: ((MediaQuery.of(context).size.width * .75) /
+                      global.menuItems[global.languageInt].length),
+                ),
+                MenuItemWidget(
+                  index: 5,
+                  width: ((MediaQuery.of(context).size.width * .75) /
+                      global.menuItems[global.languageInt].length),
+                ),
+                MenuItemWidget(
+                  index: 6,
+                  width: ((MediaQuery.of(context).size.width * .75) /
+                      global.menuItems[global.languageInt].length),
+                ),
+              ],
+            ),
           )
         ],
       ),

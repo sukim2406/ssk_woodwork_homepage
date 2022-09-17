@@ -3,24 +3,24 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../controllers/global_controller.dart' as global;
 
-class MenuItemTabletWidget extends StatefulWidget {
-  final double width;
+class MenuItemDesktopWidget extends StatefulWidget {
   final int index;
-  const MenuItemTabletWidget({
+  final double width;
+  const MenuItemDesktopWidget({
     super.key,
     required this.index,
     required this.width,
   });
 
   @override
-  State<MenuItemTabletWidget> createState() => _MenuItemTabletWidgetState();
+  State<MenuItemDesktopWidget> createState() => _MenuItemDesktopWidgetState();
 }
 
-class _MenuItemTabletWidgetState extends State<MenuItemTabletWidget> {
+class _MenuItemDesktopWidgetState extends State<MenuItemDesktopWidget> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * .04,
+      height: MediaQuery.of(context).size.height * .05,
       width: widget.width,
       child: FittedBox(
         fit: BoxFit.fitHeight,
