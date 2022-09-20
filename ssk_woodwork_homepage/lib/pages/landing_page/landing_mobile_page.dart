@@ -17,7 +17,7 @@ class _LandingMobilePageState extends State<LandingMobilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: DrawerMobileWidget(),
-      appBar: AppbarMobileWidget(),
+      appBar: const AppbarMobileWidget(),
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,

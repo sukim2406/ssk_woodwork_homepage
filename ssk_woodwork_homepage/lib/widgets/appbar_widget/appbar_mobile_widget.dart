@@ -8,78 +8,51 @@ class AppbarMobileWidget extends StatelessWidget
   const AppbarMobileWidget({super.key});
 
   @override
-  Size get preferredSize => Size.fromHeight(60);
+  Size get preferredSize => const Size.fromHeight(60);
 
   @override
   Widget build(BuildContext context) {
-    return AppBar();
+    return AppBar(
+      backgroundColor: Colors.white,
+      iconTheme: IconThemeData(
+        color: Colors.grey,
+      ),
+      title: SizedBox(
+        width: MediaQuery.of(context).size.width * .5,
+        // height: MediaQuery.of(context).size.height * .08,
+        height: 60,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              // height: MediaQuery.of(context).size.height * .07,
+              height: 50,
+              child: FittedBox(
+                fit: BoxFit.fitHeight,
+                child: Text(
+                  global.titleTxt[global.languageInt],
+                  style: GoogleFonts.gugi(
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              // height: MediaQuery.of(context).size.height * .05,
+              height: 40,
+              child: FittedBox(
+                fit: BoxFit.fitHeight,
+                child: Text(
+                  global.titleTxt2[global.languageInt],
+                  style: GoogleFonts.gugi(
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
-// class AppbarMobileWidget extends StatefulWidget {
-//   const AppbarMobileWidget({Key? key}) : super(key: key);
-
-//   @override
-//   State<AppbarMobileWidget> createState() => _AppbarMobileWidgetState();
-// }
-
-// class _AppbarMobileWidgetState extends State<AppbarMobileWidget> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       height: MediaQuery.of(context).size.height * .1,
-//       width: MediaQuery.of(context).size.width,
-//       color: Colors.white,
-//       child: Row(
-//         children: [
-//           SizedBox(
-//             width: MediaQuery.of(context).size.width * .1,
-//           ),
-//           Expanded(
-//             child: Container(),
-//           ),
-//           SizedBox(
-//             width: MediaQuery.of(context).size.width * .5,
-//             height: MediaQuery.of(context).size.height * .08,
-//             child: Row(
-//               mainAxisAlignment: MainAxisAlignment.center,
-//               children: [
-//                 SizedBox(
-//                   height: MediaQuery.of(context).size.height * .07,
-//                   child: FittedBox(
-//                     fit: BoxFit.fitHeight,
-//                     child: Text(
-//                       global.titleTxt[global.languageInt],
-//                       style: GoogleFonts.gugi(),
-//                     ),
-//                   ),
-//                 ),
-//                 SizedBox(
-//                   height: MediaQuery.of(context).size.height * .05,
-//                   child: FittedBox(
-//                     fit: BoxFit.fitHeight,
-//                     child: Text(
-//                       global.titleTxt2[global.languageInt],
-//                       style: GoogleFonts.gugi(
-//                         color: Colors.grey,
-//                       ),
-//                     ),
-//                   ),
-//                 ),
-//               ],
-//             ),
-//           ),
-//           Expanded(
-//             child: Container(),
-//           ),
-//           SizedBox(
-//             width: MediaQuery.of(context).size.width * .1,
-//             height: MediaQuery.of(context).size.height * .08,
-//             child: const Icon(
-//               Icons.more_vert_outlined,
-//             ),
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }
