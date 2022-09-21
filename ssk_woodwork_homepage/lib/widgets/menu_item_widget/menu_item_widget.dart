@@ -23,7 +23,9 @@ class _MenuItemWidgetState extends State<MenuItemWidget> {
   @override
   Widget build(BuildContext context) {
     return ResponsiveLayoutWidget(
-      mobile: MenuItemMobileWidget(),
+      mobile: MenuItemMobileWidget(
+        index: widget.index,
+      ),
       tablet: MenuItemTabletWidget(
         index: widget.index,
         width: widget.width,

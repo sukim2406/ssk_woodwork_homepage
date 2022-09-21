@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../../controllers/global_controller.dart' as global;
+
 class MenuItemMobileWidget extends StatefulWidget {
-  const MenuItemMobileWidget({super.key});
+  final int index;
+  const MenuItemMobileWidget({
+    super.key,
+    required this.index,
+  });
 
   @override
   State<MenuItemMobileWidget> createState() => _MenuItemMobileWidgetState();
@@ -10,6 +16,10 @@ class MenuItemMobileWidget extends StatefulWidget {
 class _MenuItemMobileWidgetState extends State<MenuItemMobileWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return ListTile(
+      title: Text(
+        global.menuItems[global.languageInt][widget.index],
+      ),
+    );
   }
 }
