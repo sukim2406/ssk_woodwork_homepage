@@ -17,15 +17,34 @@ class _DrawerMobileWidgetState extends State<DrawerMobileWidget> {
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
-          const ListTile(
-            title: Text(
-              'test 1',
-            ),
-          ),
           MenuItemWidget(
             index: 0,
             width: MediaQuery.of(context).size.width,
-          )
+          ),
+          MenuItemWidget(
+            index: 1,
+            width: MediaQuery.of(context).size.width,
+          ),
+          MenuItemWidget(
+            index: 2,
+            width: MediaQuery.of(context).size.width,
+          ),
+          MenuItemWidget(
+            index: 3,
+            width: MediaQuery.of(context).size.width,
+          ),
+          MenuItemWidget(
+            index: 4,
+            width: MediaQuery.of(context).size.width,
+          ),
+          MenuItemWidget(
+            index: 5,
+            width: MediaQuery.of(context).size.width,
+          ),
+          MenuItemWidget(
+            index: 6,
+            width: MediaQuery.of(context).size.width,
+          ),
         ],
       ),
     );

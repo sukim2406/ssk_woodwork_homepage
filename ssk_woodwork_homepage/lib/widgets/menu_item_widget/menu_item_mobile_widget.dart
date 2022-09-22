@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../controllers/global_controller.dart' as global;
 
@@ -19,7 +20,13 @@ class _MenuItemMobileWidgetState extends State<MenuItemMobileWidget> {
     return ListTile(
       title: Text(
         global.menuItems[global.languageInt][widget.index],
+        style: GoogleFonts.hahmlet(
+          fontWeight: FontWeight.bold,
+        ),
       ),
+      onTap: () {
+        print(global.menuItems[global.languageInt][widget.index]);
+      },
     );
   }
 }
