@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../widgets/appbar_widget/appbar_widget.dart';
+import '../../widgets/footer_widget/footer_widget.dart';
 
 class LandingTabletPage extends StatefulWidget {
   const LandingTabletPage({Key? key}) : super(key: key);
@@ -18,8 +19,12 @@ class _LandingTabletPageState extends State<LandingTabletPage> {
         height: MediaQuery.of(context).size.height,
         color: Colors.white,
         child: Column(
-          children: const [
+          children: [
             AppbarWidget(),
+            Expanded(
+              child: Container(),
+            ),
+            FooterWidget(),
           ],
         ),
       ),

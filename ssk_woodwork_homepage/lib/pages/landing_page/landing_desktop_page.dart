@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ssk_woodwork_homepage/widgets/appbar_widget/appbar_widget.dart';
 
 import '../../controllers/global_controller.dart' as global;
+import '../../widgets/footer_widget/footer_widget.dart';
 
 class LandingDesktopPage extends StatefulWidget {
   const LandingDesktopPage({Key? key}) : super(key: key);
@@ -21,6 +22,10 @@ class _LandingDesktopPageState extends State<LandingDesktopPage> {
         child: Column(
           children: [
             AppbarWidget(),
+            Expanded(
+              child: Container(),
+            ),
+            FooterWidget(),
           ],
         ),
       ),
