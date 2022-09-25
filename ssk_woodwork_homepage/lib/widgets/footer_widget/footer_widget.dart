@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ssk_woodwork_homepage/widgets/footer_widget/footer_desktop_widget.dart';
 
 import '../../widgets/responsive_layout_widget.dart';
 import '../footer_widget/footer_mobile_widget.dart';
@@ -17,6 +18,7 @@ class _FooterWidgetState extends State<FooterWidget> {
     return ResponsiveLayoutWidget(
       mobile: FooterMobileWidget(),
       tablet: FooterTabletWidget(),
+      desktop: FooterDesktopWidget(),
     );
   }
 }

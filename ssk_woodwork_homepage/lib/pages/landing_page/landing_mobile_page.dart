@@ -24,9 +24,12 @@ class _LandingMobilePageState extends State<LandingMobilePage> {
         height: MediaQuery.of(context).size.height,
         color: Colors.white,
         child: Column(
-          children: const [
+          children: [
             // AppbarWidget(), // height : .1 * h
             WelcomeWidget(), // height : .8 * h
+            Expanded(
+              child: Container(),
+            ),
             FooterWidget(),
           ],
         ),

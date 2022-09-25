@@ -7,7 +7,7 @@ class FooterTabletWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.yellow,
-      height: MediaQuery.of(context).size.height * .05,
+      height: MediaQuery.of(context).size.height * .075,
       width: MediaQuery.of(context).size.width,
     );
   }
