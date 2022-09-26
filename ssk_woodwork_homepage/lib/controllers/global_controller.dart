@@ -28,3 +28,32 @@ const menuItems = [
     'cart',
   ]
 ];
+const footerMenuItems = [
+  [
+    '이용약관',
+    '개인정보처리방침',
+    '사업자정보확인',
+  ],
+  [
+    'terms of use',
+    'cookie information',
+    'privacy statement',
+  ],
+];
+const footerInfo = [
+  [
+    '상호 : 스며듦 가구',
+    '대표 : 김소언',
+    '개인정보관리책임자 : 김소언',
+    '전화 : 000-000-0000',
+    '이메일 : ssk.sosowoodwork@gmail.com',
+    '주소 : 어딘가',
+    '사업자등록번호 : 잇을리가 없잖아',
+    '통신판매 : 하고싶다',
+  ],
+  [
+    'Infused Funiture',
+    'Soun Sean Kim',
+    '000-000-0000',
+  ],
+];
