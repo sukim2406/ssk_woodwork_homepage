@@ -3,18 +3,22 @@ import 'package:flutter/material.dart';
 import '../../controllers/global_controller.dart' as global;
 
 class FooterDesktopWidget extends StatelessWidget {
-  const FooterDesktopWidget({super.key});
+  final double heightSize;
+  const FooterDesktopWidget({
+    super.key,
+    required this.heightSize,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.red,
-      height: MediaQuery.of(context).size.height * .05,
+    return SizedBox(
+      height: heightSize,
       width: MediaQuery.of(context).size.width,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           SizedBox(
-            height: MediaQuery.of(context).size.height * .025,
+            height: heightSize / 2,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -76,7 +80,7 @@ class FooterDesktopWidget extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: MediaQuery.of(context).size.height * .025,
+            height: heightSize / 2,
             width: MediaQuery.of(context).size.width,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,

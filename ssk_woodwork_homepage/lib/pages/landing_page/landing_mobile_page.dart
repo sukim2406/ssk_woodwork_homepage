@@ -26,11 +26,11 @@ class _LandingMobilePageState extends State<LandingMobilePage> {
         child: Column(
           children: [
             // AppbarWidget(), // height : .1 * h
-            WelcomeWidget(), // height : .8 * h
+            const WelcomeWidget(), // height : .8 * h
             Expanded(
               child: Container(),
             ),
-            FooterWidget(),
+            const FooterWidget(),
           ],
         ),
       ),
