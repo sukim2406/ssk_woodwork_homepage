@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../widgets/responsive_layout_widget.dart';
 import '../footer_widget/footer_mobile_widget.dart';
 import '../footer_widget/footer_tablet_widget.dart';
+import '../footer_widget/footer_desktop_widget.dart';
 
 class FooterWidget extends StatelessWidget {
   const FooterWidget({super.key});
@@ -16,7 +17,7 @@ class FooterWidget extends StatelessWidget {
       tablet: FooterTabletWidget(
         heightSize: MediaQuery.of(context).size.height * .075,
       ),
-      desktop: FooterTabletWidget(
+      desktop: FooterDesktopWidget(
         heightSize: MediaQuery.of(context).size.height * .05,
       ),
     );

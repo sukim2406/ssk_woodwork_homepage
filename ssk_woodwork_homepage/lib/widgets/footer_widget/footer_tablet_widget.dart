@@ -18,7 +18,7 @@ class FooterTabletWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           SizedBox(
-            height: heightSize / 2,
+            height: heightSize / 3,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -80,7 +80,7 @@ class FooterTabletWidget extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: heightSize / 2,
+            height: heightSize / 3,
             width: MediaQuery.of(context).size.width,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -148,15 +148,15 @@ class FooterTabletWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                const FittedBox(
-                  fit: BoxFit.fitHeight,
-                  child: Text(
-                    ' | ',
-                    style: TextStyle(
-                      fontSize: 10,
-                    ),
-                  ),
-                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: heightSize / 3,
+            width: MediaQuery.of(context).size.width,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
                 FittedBox(
                   fit: BoxFit.fitHeight,
                   child: Text(
