@@ -4,6 +4,7 @@ import '../responsive_layout_widget.dart';
 
 import '../welcome_widget/welcome_mobile_widget.dart';
 import '../welcome_widget/welcome_tablet_widget.dart';
+import '../welcome_widget/welcome_desktop_widget.dart';
 
 class WelcomeWidget extends StatefulWidget {
   const WelcomeWidget({super.key});
@@ -18,6 +19,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
     return ResponsiveLayoutWidget(
       mobile: WelcomeMobileWidget(),
       tablet: WelcomeTabletWidget(),
+      desktop: WelcomeDesktopWidget(),
     );
   }
 }

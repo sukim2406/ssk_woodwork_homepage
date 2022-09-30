@@ -4,14 +4,14 @@ import '../../widgets/appbar_widget/appbar_widget.dart';
 import '../../widgets/footer_widget/footer_widget.dart';
 import '../../widgets/welcome_widget/welcome_widget.dart';
 
-class LandingTabletPage extends StatefulWidget {
-  const LandingTabletPage({Key? key}) : super(key: key);
+class LandingDesktopPage extends StatefulWidget {
+  const LandingDesktopPage({super.key});
 
   @override
-  State<LandingTabletPage> createState() => _LandingTabletPageState();
+  State<LandingDesktopPage> createState() => _LandingDesktopPageState();
 }
 
-class _LandingTabletPageState extends State<LandingTabletPage> {
+class _LandingDesktopPageState extends State<LandingDesktopPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,12 +20,9 @@ class _LandingTabletPageState extends State<LandingTabletPage> {
         height: MediaQuery.of(context).size.height,
         color: Colors.white,
         child: Column(
-          children: const [
+          children: [
             AppbarWidget(),
             WelcomeWidget(),
-            // Expanded(
-            //   child: Container(),
-            // ),
             FooterWidget(),
           ],
         ),

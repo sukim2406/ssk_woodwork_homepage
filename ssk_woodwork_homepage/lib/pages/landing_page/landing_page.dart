@@ -4,6 +4,7 @@ import '../../widgets/responsive_layout_widget.dart';
 
 import '../landing_page/landing_mobile_page.dart';
 import '../landing_page/landing_tablet_page.dart';
+import '../landing_page/landing_desktop_page.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({Key? key}) : super(key: key);
