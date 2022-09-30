@@ -15,7 +15,7 @@ class FooterWidget extends StatelessWidget {
         heightSize: MediaQuery.of(context).size.height * .08,
       ),
       tablet: FooterTabletWidget(
-        heightSize: MediaQuery.of(context).size.height * .075,
+        heightSize: MediaQuery.of(context).size.height * .07,
       ),
       desktop: FooterDesktopWidget(
         heightSize: MediaQuery.of(context).size.height * .05,

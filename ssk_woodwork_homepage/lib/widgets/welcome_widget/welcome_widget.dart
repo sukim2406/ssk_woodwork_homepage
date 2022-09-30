@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../responsive_layout_widget.dart';
 
 import '../welcome_widget/welcome_mobile_widget.dart';
+import '../welcome_widget/welcome_tablet_widget.dart';
 
 class WelcomeWidget extends StatefulWidget {
   const WelcomeWidget({super.key});
@@ -16,6 +17,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
   Widget build(BuildContext context) {
     return ResponsiveLayoutWidget(
       mobile: WelcomeMobileWidget(),
+      tablet: WelcomeTabletWidget(),
     );
   }
 }
