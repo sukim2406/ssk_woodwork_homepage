@@ -19,9 +19,23 @@ class _WelcomeDesktopWidgetState extends State<WelcomeDesktopWidget> {
           Container(
             height: MediaQuery.of(context).size.height * .7,
             width: MediaQuery.of(context).size.width * .8,
-            child: Image.asset(
-              'img/temp/temp_img_2.jpg',
-              fit: BoxFit.contain,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .5,
+                  width: MediaQuery.of(context).size.width * .8,
+                  child: Image.asset(
+                    'img/temp/temp_img_2.jpg',
+                    fit: BoxFit.contain,
+                  ),
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .2,
+                  width: MediaQuery.of(context).size.width * .8,
+                  child: Text('내 삶에 스며든 가구'),
+                ),
+              ],
             ),
           ),
         ],
