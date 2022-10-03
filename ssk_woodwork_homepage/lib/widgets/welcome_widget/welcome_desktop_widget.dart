@@ -16,6 +16,9 @@ class _WelcomeDesktopWidgetState extends State<WelcomeDesktopWidget> {
       color: Colors.white,
       child: Column(
         children: [
+          Expanded(
+            child: Container(),
+          ),
           Container(
             height: MediaQuery.of(context).size.height * .7,
             width: MediaQuery.of(context).size.width * .8,
@@ -31,9 +34,15 @@ class _WelcomeDesktopWidgetState extends State<WelcomeDesktopWidget> {
                   ),
                 ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * .2,
+                  height: MediaQuery.of(context).size.height * .1,
                   width: MediaQuery.of(context).size.width * .8,
-                  child: Text('내 삶에 스며든 가구'),
+                  child: const FittedBox(
+                    fit: BoxFit.fitHeight,
+                    child: Text("내 삶에 스며든 가구"),
+                  ),
+                ),
+                Expanded(
+                  child: Container(),
                 ),
               ],
             ),
