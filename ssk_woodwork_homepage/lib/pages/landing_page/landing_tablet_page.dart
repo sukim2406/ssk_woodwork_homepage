@@ -5,7 +5,13 @@ import '../../widgets/footer_widget/footer_widget.dart';
 import '../../widgets/welcome_widget/welcome_widget.dart';
 
 class LandingTabletPage extends StatefulWidget {
-  const LandingTabletPage({Key? key}) : super(key: key);
+  final int pageIndex;
+  final Function updatePageIndex;
+  const LandingTabletPage({
+    Key? key,
+    required this.pageIndex,
+    required this.updatePageIndex,
+  }) : super(key: key);
 
   @override
   State<LandingTabletPage> createState() => _LandingTabletPageState();
@@ -20,8 +26,11 @@ class _LandingTabletPageState extends State<LandingTabletPage> {
         height: MediaQuery.of(context).size.height,
         color: Colors.white,
         child: Column(
-          children: const [
-            AppbarWidget(),
+          children: [
+            AppbarWidget(
+              pageIndex: widget.pageIndex,
+              updatePageIndex: widget.updatePageIndex,
+            ),
             WelcomeWidget(),
             // Expanded(
             //   child: Container(),

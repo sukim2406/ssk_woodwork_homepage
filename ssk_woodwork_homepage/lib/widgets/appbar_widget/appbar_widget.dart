@@ -7,7 +7,13 @@ import '../appbar_widget/appbar_tablet_widget.dart';
 import '../appbar_widget/appbar_desktop_widget.dart';
 
 class AppbarWidget extends StatefulWidget {
-  const AppbarWidget({Key? key}) : super(key: key);
+  final int pageIndex;
+  final Function updatePageIndex;
+  const AppbarWidget({
+    Key? key,
+    required this.pageIndex,
+    required this.updatePageIndex,
+  }) : super(key: key);
 
   @override
   State<AppbarWidget> createState() => _AppbarWidgetState();

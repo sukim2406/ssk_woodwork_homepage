@@ -33,6 +33,9 @@ class _WelcomeDesktopWidgetState extends State<WelcomeDesktopWidget> {
                     fit: BoxFit.contain,
                   ),
                 ),
+                Expanded(
+                  child: Container(),
+                ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * .1,
                   width: MediaQuery.of(context).size.width * .8,

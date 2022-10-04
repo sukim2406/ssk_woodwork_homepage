@@ -5,7 +5,13 @@ import '../../widgets/footer_widget/footer_widget.dart';
 import '../../widgets/welcome_widget/welcome_widget.dart';
 
 class LandingDesktopPage extends StatefulWidget {
-  const LandingDesktopPage({super.key});
+  final int pageIndex;
+  final Function updatePageIndex;
+  const LandingDesktopPage({
+    super.key,
+    required this.pageIndex,
+    required this.updatePageIndex,
+  });
 
   @override
   State<LandingDesktopPage> createState() => _LandingDesktopPageState();
@@ -21,7 +27,10 @@ class _LandingDesktopPageState extends State<LandingDesktopPage> {
         color: Colors.white,
         child: Column(
           children: [
-            AppbarWidget(),
+            AppbarWidget(
+              pageIndex: widget.pageIndex,
+              updatePageIndex: widget.updatePageIndex,
+            ),
             WelcomeWidget(),
             FooterWidget(),
           ],

@@ -16,9 +16,22 @@ class LandingPage extends StatefulWidget {
 class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
-    return const ResponsiveLayoutWidget(
+    int pageIndex = 0;
+
+    updatePageIndex(int newIndex) {
+      setState(() {
+        pageIndex = newIndex;
+      });
+    }
+
+    return ResponsiveLayoutWidget(
       mobile: LandingMobilePage(),
-      tablet: LandingTabletPage(),
+      tablet: LandingTabletPage(
+        pageIndex: pageIndex,
+        updatePageIndex: updatePageIndex,
+      ),
+      desktop: LandingDesktopPage(
+          pageIndex: pageIndex, updatePageIndex: updatePageIndex),
     );
   }
 }
