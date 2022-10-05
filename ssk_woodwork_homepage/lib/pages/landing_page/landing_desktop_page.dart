@@ -31,8 +31,22 @@ class _LandingDesktopPageState extends State<LandingDesktopPage> {
               pageIndex: widget.pageIndex,
               updatePageIndex: widget.updatePageIndex,
             ),
-            WelcomeWidget(),
-            FooterWidget(),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .85,
+              width: MediaQuery.of(context).size.width,
+              child: SingleChildScrollView(
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.height * 5.95,
+                  width: MediaQuery.of(context).size.width,
+                  child: Column(
+                    children: const [
+                      WelcomeWidget(),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            const FooterWidget(),
           ],
         ),
       ),
