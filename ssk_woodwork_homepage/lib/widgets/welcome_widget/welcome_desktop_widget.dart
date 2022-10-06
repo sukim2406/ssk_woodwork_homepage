@@ -19,7 +19,7 @@ class _WelcomeDesktopWidgetState extends State<WelcomeDesktopWidget> {
           Expanded(
             child: Container(),
           ),
-          Container(
+          SizedBox(
             height: MediaQuery.of(context).size.height * .7,
             width: MediaQuery.of(context).size.width * .8,
             child: Column(

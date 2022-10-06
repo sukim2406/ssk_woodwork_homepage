@@ -10,45 +10,29 @@ class WelcomeMobileWidget extends StatefulWidget {
 class _WelcomeMobileWidgetState extends State<WelcomeMobileWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height * .8,
-      color: Colors.red,
-      child: SingleChildScrollView(
-        child: Container(
-          width: MediaQuery.of(context).size.width * 9,
-          height: MediaQuery.of(context).size.height * 4,
-          color: Colors.black,
-          child: Column(
-            children: [
-              Container(
-                width: MediaQuery.of(context).size.width * .8,
-                height: MediaQuery.of(context).size.height * .8,
-                color: Colors.pink,
-              ),
-              Container(
-                width: MediaQuery.of(context).size.width * .8,
-                height: MediaQuery.of(context).size.height * .8,
-                color: Colors.blue,
-              ),
-              Container(
-                width: MediaQuery.of(context).size.width * .8,
-                height: MediaQuery.of(context).size.height * .8,
-                color: Colors.green,
-              ),
-              Container(
-                width: MediaQuery.of(context).size.width * .8,
-                height: MediaQuery.of(context).size.height * .8,
-                color: Colors.yellow,
-              ),
-              Container(
-                width: MediaQuery.of(context).size.width * .8,
-                height: MediaQuery.of(context).size.height * .8,
-                color: Colors.grey,
-              )
-            ],
+      child: Column(
+        children: [
+          Container(
+            color: Colors.pink,
+            height: MediaQuery.of(context).size.height * .4,
+            width: MediaQuery.of(context).size.width * .8,
+            child: Image.asset(
+              'img/temp/temp_img_2.jpg',
+              fit: BoxFit.contain,
+            ),
           ),
-        ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * .1,
+            width: MediaQuery.of(context).size.width * .8,
+            child: const FittedBox(
+              fit: BoxFit.fitHeight,
+              child: Text("내 삶에 스며든 가구"),
+            ),
+          ),
+        ],
       ),
     );
   }

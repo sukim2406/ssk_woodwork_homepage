@@ -29,7 +29,21 @@ class _LandingMobilePageState extends State<LandingMobilePage> {
               child: Container(),
             ),
             // AppbarWidget(), // height : .1 * h
-            const WelcomeWidget(), // height : .8 * h
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .8,
+              width: MediaQuery.of(context).size.width,
+              child: SingleChildScrollView(
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.height * 5.6,
+                  width: MediaQuery.of(context).size.width,
+                  child: Column(
+                    children: const [
+                      WelcomeWidget(),
+                    ],
+                  ),
+                ),
+              ),
+            ), // height : .8 * h
             Expanded(
               child: Container(),
             ),
