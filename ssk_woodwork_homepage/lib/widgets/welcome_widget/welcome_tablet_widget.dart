@@ -13,31 +13,18 @@ class _WelcomeTabletWidgetState extends State<WelcomeTabletWidget> {
     return SizedBox(
       height: MediaQuery.of(context).size.height * .775,
       width: MediaQuery.of(context).size.width,
-      child: Container(
-        height: MediaQuery.of(context).size.height * .775,
-        width: MediaQuery.of(context).size.width,
-        color: Colors.black,
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * .775,
-                color: Colors.pink,
-              ),
-              Container(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * .775,
-                color: Colors.blue,
-              ),
-              Container(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * .775,
-                color: Colors.red,
-              ),
-            ],
+      child: Column(
+        children: [
+          Container(
+            color: Colors.pink,
+            height: MediaQuery.of(context).size.height * .5,
+            width: MediaQuery.of(context).size.width,
+            child: Image.asset(
+              'img/temp/temp_img_2.jpg',
+              fit: BoxFit.contain,
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

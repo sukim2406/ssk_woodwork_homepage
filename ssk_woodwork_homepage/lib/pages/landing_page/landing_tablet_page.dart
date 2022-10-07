@@ -31,7 +31,22 @@ class _LandingTabletPageState extends State<LandingTabletPage> {
               pageIndex: widget.pageIndex,
               updatePageIndex: widget.updatePageIndex,
             ),
-            WelcomeWidget(),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .775,
+              width: MediaQuery.of(context).size.width,
+              child: SingleChildScrollView(
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.height * 5.425,
+                  width: MediaQuery.of(context).size.width,
+                  child: Column(
+                    children: const [
+                      WelcomeWidget(),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            // WelcomeWidget(),
             // Expanded(
             //   child: Container(),
             // ),
