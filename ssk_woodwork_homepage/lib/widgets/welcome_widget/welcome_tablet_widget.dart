@@ -15,6 +15,9 @@ class _WelcomeTabletWidgetState extends State<WelcomeTabletWidget> {
       width: MediaQuery.of(context).size.width,
       child: Column(
         children: [
+          Expanded(
+            child: Container(),
+          ),
           Container(
             color: Colors.pink,
             height: MediaQuery.of(context).size.height * .5,
@@ -23,6 +26,17 @@ class _WelcomeTabletWidgetState extends State<WelcomeTabletWidget> {
               'img/temp/temp_img_2.jpg',
               fit: BoxFit.contain,
             ),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * .1,
+            width: MediaQuery.of(context).size.width,
+            child: const FittedBox(
+              fit: BoxFit.fitHeight,
+              child: Text("내 삶에 스며든 가구"),
+            ),
+          ),
+          Expanded(
+            child: Container(),
           ),
         ],
       ),

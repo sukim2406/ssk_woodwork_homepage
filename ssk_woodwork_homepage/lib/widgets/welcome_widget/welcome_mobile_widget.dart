@@ -15,6 +15,9 @@ class _WelcomeMobileWidgetState extends State<WelcomeMobileWidget> {
       height: MediaQuery.of(context).size.height * .8,
       child: Column(
         children: [
+          Expanded(
+            child: Container(),
+          ),
           Container(
             color: Colors.pink,
             height: MediaQuery.of(context).size.height * .4,
@@ -31,6 +34,9 @@ class _WelcomeMobileWidgetState extends State<WelcomeMobileWidget> {
               fit: BoxFit.fitHeight,
               child: Text("내 삶에 스며든 가구"),
             ),
+          ),
+          Expanded(
+            child: Container(),
           ),
         ],
       ),
