@@ -25,7 +25,10 @@ class _LandingPageState extends State<LandingPage> {
     }
 
     return ResponsiveLayoutWidget(
-      mobile: LandingMobilePage(),
+      mobile: LandingMobilePage(
+        pageIndex: pageIndex,
+        updatePageIndex: updatePageIndex,
+      ),
       tablet: LandingTabletPage(
         pageIndex: pageIndex,
         updatePageIndex: updatePageIndex,

@@ -7,7 +7,13 @@ import '../../widgets/appbar_widget/appbar_mobile_widget.dart';
 import '../../widgets/footer_widget/footer_widget.dart';
 
 class LandingMobilePage extends StatefulWidget {
-  const LandingMobilePage({Key? key}) : super(key: key);
+  final int pageIndex;
+  final Function updatePageIndex;
+  const LandingMobilePage({
+    Key? key,
+    required this.pageIndex,
+    required this.updatePageIndex,
+  }) : super(key: key);
 
   @override
   State<LandingMobilePage> createState() => _LandingMobilePageState();
