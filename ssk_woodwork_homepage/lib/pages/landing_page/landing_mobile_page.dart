@@ -5,6 +5,7 @@ import '../../widgets/welcome_widget/welcome_widget.dart';
 import '../../widgets/appbar_widget/drawer_mobile_widget.dart';
 import '../../widgets/appbar_widget/appbar_mobile_widget.dart';
 import '../../widgets/footer_widget/footer_widget.dart';
+import '../../widgets/specialized_widget/specialized_widget.dart';
 
 class LandingMobilePage extends StatefulWidget {
   final int pageIndex;
@@ -45,6 +46,7 @@ class _LandingMobilePageState extends State<LandingMobilePage> {
                   child: Column(
                     children: const [
                       WelcomeWidget(),
+                      SpecializedWidget(),
                     ],
                   ),
                 ),
