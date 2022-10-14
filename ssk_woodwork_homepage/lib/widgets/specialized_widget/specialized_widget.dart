@@ -4,6 +4,7 @@ import '../responsive_layout_widget.dart';
 
 import '../specialized_widget/specialized_mobile_widget.dart';
 import '../specialized_widget/specialized_tablet_widget.dart';
+import '../specialized_widget/specialized_desktop_widget.dart';
 
 class SpecializedWidget extends StatefulWidget {
   const SpecializedWidget({super.key});
@@ -18,6 +19,7 @@ class _SpecializedWidgetState extends State<SpecializedWidget> {
     return ResponsiveLayoutWidget(
       mobile: SpecializedMobileWidget(),
       tablet: SpecializedTabletWidget(),
+      desktop: SpecializedDesktopWidget(),
     );
   }
 }

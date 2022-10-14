@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../widgets/appbar_widget/appbar_widget.dart';
 import '../../widgets/footer_widget/footer_widget.dart';
 import '../../widgets/welcome_widget/welcome_widget.dart';
+import '../../widgets/specialized_widget/specialized_widget.dart';
 
 class LandingDesktopPage extends StatefulWidget {
   final int pageIndex;
@@ -41,6 +42,7 @@ class _LandingDesktopPageState extends State<LandingDesktopPage> {
                   child: Column(
                     children: const [
                       WelcomeWidget(),
+                      SpecializedWidget(),
                     ],
                   ),
                 ),
