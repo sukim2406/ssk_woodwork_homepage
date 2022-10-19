@@ -17,6 +17,9 @@ class _SpecializedDesktopWidgetState extends State<SpecializedDesktopWidget> {
       color: Colors.purple,
       child: Column(
         children: [
+          Expanded(
+            child: Container(),
+          ),
           Container(
             height: MediaQuery.of(context).size.height * .55,
             width: MediaQuery.of(context).size.width * .8,
@@ -26,9 +29,39 @@ class _SpecializedDesktopWidgetState extends State<SpecializedDesktopWidget> {
             ),
           ),
           SizedBox(
-            height: MediaQuery.of(context).size.height * .3,
+            height: MediaQuery.of(context).size.height * .15,
             width: MediaQuery.of(context).size.width * .8,
-            child: Text('맞춤 재작'),
+            child: Column(
+              children: [
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .07,
+                  width: MediaQuery.of(context).size.width * .6,
+                  child: const FittedBox(
+                    fit: BoxFit.fitHeight,
+                    child: Text('맞춤 제작'),
+                  ),
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .04,
+                  width: MediaQuery.of(context).size.width * .6,
+                  child: const FittedBox(
+                    fit: BoxFit.fitHeight,
+                    child: Text('문의 주세요'),
+                  ),
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .04,
+                  width: MediaQuery.of(context).size.width * .6,
+                  child: const FittedBox(
+                    fit: BoxFit.fitHeight,
+                    child: Text('010-000-0000'),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: Container(),
           ),
         ],
       ),
