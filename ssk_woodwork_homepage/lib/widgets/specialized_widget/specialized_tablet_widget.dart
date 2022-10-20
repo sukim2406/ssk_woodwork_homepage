@@ -17,6 +17,9 @@ class _SpecializedTabletWidgetState extends State<SpecializedTabletWidget> {
       color: Colors.purple,
       child: Column(
         children: [
+          Expanded(
+            child: Container(),
+          ),
           Container(
             height: MediaQuery.of(context).size.height * .4,
             width: MediaQuery.of(context).size.width * .8,
@@ -26,11 +29,46 @@ class _SpecializedTabletWidgetState extends State<SpecializedTabletWidget> {
             ),
             color: Colors.pink,
           ),
-          SizedBox(
-            height: MediaQuery.of(context).size.height * .375,
+          Container(
+            color: Colors.pink,
+            height: MediaQuery.of(context).size.height * .25,
             width: MediaQuery.of(context).size.width * .8,
-            child: Text('맞춤 재작'),
-          )
+            child: Column(
+              children: [
+                Container(
+                  height: MediaQuery.of(context).size.height * .05,
+                  color: Colors.blue,
+                ),
+                Container(
+                  height: MediaQuery.of(context).size.height * .07,
+                  width: MediaQuery.of(context).size.width * .8,
+                  child: FittedBox(
+                    fit: BoxFit.fitHeight,
+                    child: Text('맞춤 제작'),
+                  ),
+                ),
+                Container(
+                  height: MediaQuery.of(context).size.height * .035,
+                  width: MediaQuery.of(context).size.width * .8,
+                  child: FittedBox(
+                    fit: BoxFit.fitHeight,
+                    child: Text('문의 주세요'),
+                  ),
+                ),
+                Container(
+                  height: MediaQuery.of(context).size.height * .035,
+                  width: MediaQuery.of(context).size.width * .8,
+                  child: FittedBox(
+                    fit: BoxFit.fitHeight,
+                    child: Text('000-000-0000'),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: Container(),
+          ),
         ],
       ),
     );
