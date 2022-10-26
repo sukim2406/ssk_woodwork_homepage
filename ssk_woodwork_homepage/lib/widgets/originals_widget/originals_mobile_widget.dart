@@ -10,6 +10,25 @@ class OriginalsMobileWidget extends StatefulWidget {
 class _OriginalsMobileWidgetState extends State<OriginalsMobileWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height * .8,
+      color: Colors.blue,
+      child: Column(
+        children: [
+          Expanded(
+            child: Container(),
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width * .8,
+            height: MediaQuery.of(context).size.height * .5,
+            color: Colors.black,
+          ),
+          Expanded(
+            child: Container(),
+          ),
+        ],
+      ),
+    );
   }
 }

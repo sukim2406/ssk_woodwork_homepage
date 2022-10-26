@@ -16,6 +16,8 @@ class OriginalsWidget extends StatefulWidget {
 class _OriginalsWidgetState extends State<OriginalsWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return ResponsiveLayoutWidget(
+      mobile: OriginalsMobileWidget(),
+    );
   }
 }
