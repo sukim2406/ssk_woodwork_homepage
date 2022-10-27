@@ -18,6 +18,7 @@ class _OriginalsWidgetState extends State<OriginalsWidget> {
   Widget build(BuildContext context) {
     return ResponsiveLayoutWidget(
       mobile: OriginalsMobileWidget(),
+      tablet: OriginalsTabletWidget(),
     );
   }
 }
