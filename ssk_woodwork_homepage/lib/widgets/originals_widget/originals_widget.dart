@@ -19,6 +19,7 @@ class _OriginalsWidgetState extends State<OriginalsWidget> {
     return ResponsiveLayoutWidget(
       mobile: OriginalsMobileWidget(),
       tablet: OriginalsTabletWidget(),
+      desktop: OriginalsDesktopWidget(),
     );
   }
 }
