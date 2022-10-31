@@ -4,6 +4,7 @@ import '../responsive_layout_widget.dart';
 
 import '../academy_widget/academy_mobile_widget.dart';
 import '../academy_widget/academy_tablet_widget.dart';
+import '../academy_widget/academy_desktop_widget.dart';
 
 class AcademyWidget extends StatefulWidget {
   const AcademyWidget({super.key});
@@ -18,6 +19,7 @@ class _AcademyWidgetState extends State<AcademyWidget> {
     return ResponsiveLayoutWidget(
       mobile: AcademyMobileWidget(),
       tablet: AcademyTabletWidget(),
+      desktop: AcademyDesktopWidget(),
     );
   }
 }

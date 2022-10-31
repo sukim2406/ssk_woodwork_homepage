@@ -5,6 +5,7 @@ import '../../widgets/footer_widget/footer_widget.dart';
 import '../../widgets/welcome_widget/welcome_widget.dart';
 import '../../widgets/specialized_widget/specialized_widget.dart';
 import '../../widgets/originals_widget/originals_widget.dart';
+import '../../widgets/academy_widget/academy_widget.dart';
 
 class LandingDesktopPage extends StatefulWidget {
   final int pageIndex;
@@ -45,6 +46,7 @@ class _LandingDesktopPageState extends State<LandingDesktopPage> {
                       WelcomeWidget(),
                       SpecializedWidget(),
                       OriginalsWidget(),
+                      AcademyWidget(),
                     ],
                   ),
                 ),
