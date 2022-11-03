@@ -4,6 +4,7 @@ import '../responsive_layout_widget.dart';
 
 import '../board_widget/board_mobile_widget.dart';
 import '../board_widget/board_tablet_widget.dart';
+import '../board_widget/board_desktop_widget.dart';
 
 class BoardWidget extends StatefulWidget {
   const BoardWidget({super.key});
@@ -18,6 +19,7 @@ class _BoardWidgetState extends State<BoardWidget> {
     return ResponsiveLayoutWidget(
       mobile: BoardMobileWidget(),
       tablet: BoardTabletWidget(),
+      desktop: BoardDesktopWidget(),
     );
   }
 }
