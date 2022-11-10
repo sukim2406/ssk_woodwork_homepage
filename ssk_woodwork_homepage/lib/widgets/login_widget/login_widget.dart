@@ -4,6 +4,7 @@ import '../responsive_layout_widget.dart';
 
 import '../login_widget/login_mobile_widget.dart';
 import '../login_widget/login_tablet_widget.dart';
+import '../login_widget/login_desktop_widget.dart';
 
 class MyWidget extends StatefulWidget {
   const MyWidget({super.key});
@@ -18,6 +19,7 @@ class _MyWidgetState extends State<MyWidget> {
     return ResponsiveLayoutWidget(
       mobile: LoginMobileWidget(),
       tablet: LoginTabletWidget(),
+      desktop: LoginDesktopWidget(),
     );
   }
 }
