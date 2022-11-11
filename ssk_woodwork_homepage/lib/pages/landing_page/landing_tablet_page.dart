@@ -7,6 +7,7 @@ import '../../widgets/specialized_widget/specialized_widget.dart';
 import '../../widgets/originals_widget/originals_widget.dart';
 import '../../widgets/academy_widget/academy_widget.dart';
 import '../../widgets/board_widget/board_widget.dart';
+import '../../widgets/login_widget/login_widget.dart';
 
 class LandingTabletPage extends StatefulWidget {
   final int pageIndex;
@@ -49,6 +50,7 @@ class _LandingTabletPageState extends State<LandingTabletPage> {
                       OriginalsWidget(),
                       AcademyWidget(),
                       BoardWidget(),
+                      LoginWidget(),
                     ],
                   ),
                 ),
