@@ -4,6 +4,7 @@ import '../responsive_layout_widget.dart';
 
 import '../cart_widget/cart_mobile_widget.dart';
 import '../cart_widget/cart_tablet_widget.dart';
+import '../cart_widget/cart_desktop_widget.dart';
 
 class CartWidget extends StatefulWidget {
   const CartWidget({super.key});
@@ -18,6 +19,7 @@ class _CartWidgetState extends State<CartWidget> {
     return ResponsiveLayoutWidget(
       mobile: CartMobileWidget(),
       tablet: CartTabletWidget(),
+      desktop: CartDesktopWidget(),
     );
   }
 }
