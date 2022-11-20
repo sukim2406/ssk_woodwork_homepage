@@ -14,7 +14,7 @@ class _SpecializedDesktopWidgetState extends State<SpecializedDesktopWidget> {
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height * .85,
-      color: Colors.purple,
+      color: Colors.white,
       child: Column(
         children: [
           Expanded(
