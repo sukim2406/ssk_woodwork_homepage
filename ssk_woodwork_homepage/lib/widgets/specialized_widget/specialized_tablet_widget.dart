@@ -14,7 +14,7 @@ class _SpecializedTabletWidgetState extends State<SpecializedTabletWidget> {
     return Container(
       height: MediaQuery.of(context).size.height * .775,
       width: MediaQuery.of(context).size.width,
-      color: Colors.purple,
+      color: Colors.white,
       child: Column(
         children: [
           Expanded(
