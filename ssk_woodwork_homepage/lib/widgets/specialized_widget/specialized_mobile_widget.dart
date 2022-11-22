@@ -23,7 +23,7 @@ class _SpecializedMobileWidgetState extends State<SpecializedMobileWidget> {
           Container(
             width: MediaQuery.of(context).size.width * .8,
             height: MediaQuery.of(context).size.height * .5,
-            color: Colors.red,
+            color: Colors.white,
             child: Image.asset(
               'img/temp/temp_img_3.png',
               fit: BoxFit.contain,
