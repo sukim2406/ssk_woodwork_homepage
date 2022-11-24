@@ -23,6 +23,13 @@ class _OriginalsDesktopWidgetState extends State<OriginalsDesktopWidget> {
             height: MediaQuery.of(context).size.height * .7,
             width: MediaQuery.of(context).size.width * .8,
             color: Colors.black,
+            child: SingleChildScrollView(
+              child: Container(
+                color: Colors.amber,
+                height: MediaQuery.of(context).size.height * 2,
+                width: MediaQuery.of(context).size.width * .75,
+              ),
+            ),
           ),
           Expanded(
             child: Container(),
