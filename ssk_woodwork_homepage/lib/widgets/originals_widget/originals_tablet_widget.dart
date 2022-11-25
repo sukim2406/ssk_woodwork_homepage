@@ -23,6 +23,14 @@ class _OriginalsTabletWidgetState extends State<OriginalsTabletWidget> {
             height: MediaQuery.of(context).size.height * .65,
             width: MediaQuery.of(context).size.width * .8,
             color: Colors.black,
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Container(
+                color: Colors.amber,
+                height: MediaQuery.of(context).size.height * .6,
+                width: MediaQuery.of(context).size.width * 2,
+              ),
+            ),
           ),
           Expanded(
             child: Container(),
