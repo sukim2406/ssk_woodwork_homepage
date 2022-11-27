@@ -21,13 +21,27 @@ class _OriginalsDesktopWidgetState extends State<OriginalsDesktopWidget> {
           ),
           Container(
             height: MediaQuery.of(context).size.height * .7,
-            width: MediaQuery.of(context).size.width * .8,
+            width: MediaQuery.of(context).size.width,
             color: Colors.black,
             child: SingleChildScrollView(
-              child: Container(
-                color: Colors.amber,
-                height: MediaQuery.of(context).size.height * 2,
-                width: MediaQuery.of(context).size.width * .75,
+              child: Column(
+                children: [
+                  Container(
+                    color: Colors.amber,
+                    height: MediaQuery.of(context).size.height * 2,
+                    width: MediaQuery.of(context).size.width * .75,
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: MediaQuery.of(context).size.height * 2,
+                    width: MediaQuery.of(context).size.width * .75,
+                  ),
+                  Container(
+                    color: Colors.orange,
+                    height: MediaQuery.of(context).size.height * 2,
+                    width: MediaQuery.of(context).size.width * .75,
+                  ),
+                ],
               ),
             ),
           ),
