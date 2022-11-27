@@ -23,6 +23,14 @@ class _OriginalsMobileWidgetState extends State<OriginalsMobileWidget> {
             width: MediaQuery.of(context).size.width * .8,
             height: MediaQuery.of(context).size.height * .5,
             color: Colors.black,
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Container(
+                color: Colors.amber,
+                height: MediaQuery.of(context).size.height * .45,
+                width: MediaQuery.of(context).size.width * 2,
+              ),
+            ),
           ),
           Expanded(
             child: Container(),
