@@ -21,14 +21,27 @@ class _OriginalsMobileWidgetState extends State<OriginalsMobileWidget> {
           ),
           Container(
             width: MediaQuery.of(context).size.width * .8,
-            height: MediaQuery.of(context).size.height * .5,
+            height: MediaQuery.of(context).size.height * .8,
             color: Colors.black,
             child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Container(
-                color: Colors.amber,
-                height: MediaQuery.of(context).size.height * .45,
-                width: MediaQuery.of(context).size.width * 2,
+              child: Column(
+                children: [
+                  Container(
+                    color: Colors.amber,
+                    height: MediaQuery.of(context).size.height * 2,
+                    width: MediaQuery.of(context).size.width * .75,
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: MediaQuery.of(context).size.height * 2,
+                    width: MediaQuery.of(context).size.width * .75,
+                  ),
+                  Container(
+                    color: Colors.orange,
+                    height: MediaQuery.of(context).size.height * 2,
+                    width: MediaQuery.of(context).size.width * .75,
+                  ),
+                ],
               ),
             ),
           ),
