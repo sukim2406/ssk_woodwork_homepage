@@ -25,10 +25,24 @@ class _OriginalsTabletWidgetState extends State<OriginalsTabletWidget> {
             color: Colors.black,
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Container(
-                color: Colors.amber,
-                height: MediaQuery.of(context).size.height * .6,
-                width: MediaQuery.of(context).size.width * 2,
+              child: Row(
+                children: [
+                  Container(
+                    color: Colors.red,
+                    height: MediaQuery.of(context).size.height * .6,
+                    width: MediaQuery.of(context).size.width * 2,
+                  ),
+                  Container(
+                    color: Colors.orange,
+                    height: MediaQuery.of(context).size.height * .6,
+                    width: MediaQuery.of(context).size.width * 2,
+                  ),
+                  Container(
+                    color: Colors.yellow,
+                    height: MediaQuery.of(context).size.height * .6,
+                    width: MediaQuery.of(context).size.width * 2,
+                  ),
+                ],
               ),
             ),
           ),
