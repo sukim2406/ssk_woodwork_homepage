@@ -24,25 +24,48 @@ class _OriginalsDesktopWidgetState extends State<OriginalsDesktopWidget> {
             width: MediaQuery.of(context).size.width,
             color: Colors.black,
             child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Container(
-                    color: Colors.amber,
-                    height: MediaQuery.of(context).size.height * 2,
-                    width: MediaQuery.of(context).size.width * .75,
-                  ),
-                  Container(
-                    color: Colors.red,
-                    height: MediaQuery.of(context).size.height * 2,
-                    width: MediaQuery.of(context).size.width * .75,
-                  ),
-                  Container(
-                    color: Colors.orange,
-                    height: MediaQuery.of(context).size.height * 2,
-                    width: MediaQuery.of(context).size.width * .75,
-                  ),
-                ],
+              child: Container(
+                height: MediaQuery.of(context).size.height * 3,
+                width: MediaQuery.of(context).size.width * .7,
+                color: Colors.black,
+                child: GridView.count(
+                  primary: false,
+                  padding: const EdgeInsets.all(20),
+                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 10,
+                  crossAxisCount: 3,
+                  children: [
+                    Container(
+                      color: Colors.amber,
+                    ),
+                    Container(
+                      color: Colors.red,
+                    ),
+                    Container(
+                      color: Colors.orange,
+                    ),
+                  ],
+                ),
               ),
+              // Column(
+              //   children: [
+              //     Container(
+              //       color: Colors.amber,
+              //       height: MediaQuery.of(context).size.height * 2,
+              //       width: MediaQuery.of(context).size.width * .75,
+              //     ),
+              //     Container(
+              //       color: Colors.red,
+              //       height: MediaQuery.of(context).size.height * 2,
+              //       width: MediaQuery.of(context).size.width * .75,
+              //     ),
+              //     Container(
+              //       color: Colors.orange,
+              //       height: MediaQuery.of(context).size.height * 2,
+              //       width: MediaQuery.of(context).size.width * .75,
+              //     ),
+              //   ],
+              // ),
             ),
           ),
           Expanded(
