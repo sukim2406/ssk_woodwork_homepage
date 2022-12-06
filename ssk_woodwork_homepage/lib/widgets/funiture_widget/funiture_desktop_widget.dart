@@ -10,6 +10,9 @@ class FunitureDesktopWidget extends StatefulWidget {
 class _FunitureDesktopWidgetState extends State<FunitureDesktopWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      color: Colors.black,
+      child: Icon(Icons.ac_unit),
+    );
   }
 }
