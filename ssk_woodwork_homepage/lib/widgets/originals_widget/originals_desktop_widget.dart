@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../funiture_widget/funiture_widget.dart';
 
 class OriginalsDesktopWidget extends StatefulWidget {
   const OriginalsDesktopWidget({super.key});
@@ -35,6 +36,7 @@ class _OriginalsDesktopWidgetState extends State<OriginalsDesktopWidget> {
                   mainAxisSpacing: 10,
                   crossAxisCount: 3,
                   children: [
+                    FunitureWidget(),
                     Container(
                       color: Colors.amber,
                     ),
