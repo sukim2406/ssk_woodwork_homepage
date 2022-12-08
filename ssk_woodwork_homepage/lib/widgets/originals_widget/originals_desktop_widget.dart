@@ -23,12 +23,10 @@ class _OriginalsDesktopWidgetState extends State<OriginalsDesktopWidget> {
           Container(
             height: MediaQuery.of(context).size.height * .7,
             width: MediaQuery.of(context).size.width,
-            color: Colors.black,
             child: SingleChildScrollView(
               child: Container(
                 height: MediaQuery.of(context).size.height * 3,
                 width: MediaQuery.of(context).size.width * .7,
-                color: Colors.black,
                 child: GridView.count(
                   primary: false,
                   padding: const EdgeInsets.all(20),
@@ -37,15 +35,6 @@ class _OriginalsDesktopWidgetState extends State<OriginalsDesktopWidget> {
                   crossAxisCount: 3,
                   children: [
                     FunitureWidget(),
-                    Container(
-                      color: Colors.amber,
-                    ),
-                    Container(
-                      color: Colors.red,
-                    ),
-                    Container(
-                      color: Colors.orange,
-                    ),
                   ],
                 ),
               ),

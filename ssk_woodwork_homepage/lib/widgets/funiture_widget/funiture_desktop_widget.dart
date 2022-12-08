@@ -11,8 +11,15 @@ class _FunitureDesktopWidgetState extends State<FunitureDesktopWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black,
-      child: Icon(Icons.ac_unit),
+      width: MediaQuery.of(context).size.width * .3,
+      height: MediaQuery.of(context).size.height * .3,
+      color: Colors.pink,
+      child: Text(
+        'Testing',
+        style: TextStyle(
+          color: Colors.white,
+        ),
+      ),
     );
   }
 }
