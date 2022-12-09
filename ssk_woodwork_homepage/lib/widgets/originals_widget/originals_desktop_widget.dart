@@ -23,42 +23,57 @@ class _OriginalsDesktopWidgetState extends State<OriginalsDesktopWidget> {
           Container(
             height: MediaQuery.of(context).size.height * .7,
             width: MediaQuery.of(context).size.width,
-            child: SingleChildScrollView(
-              child: Container(
-                height: MediaQuery.of(context).size.height * 3,
-                width: MediaQuery.of(context).size.width * .7,
-                child: GridView.count(
-                  primary: false,
-                  padding: const EdgeInsets.all(20),
-                  crossAxisSpacing: 10,
-                  mainAxisSpacing: 10,
-                  crossAxisCount: 3,
-                  children: [
-                    FunitureWidget(),
-                  ],
-                ),
-              ),
-              // Column(
-              //   children: [
-              //     Container(
-              //       color: Colors.amber,
-              //       height: MediaQuery.of(context).size.height * 2,
-              //       width: MediaQuery.of(context).size.width * .75,
-              //     ),
-              //     Container(
-              //       color: Colors.red,
-              //       height: MediaQuery.of(context).size.height * 2,
-              //       width: MediaQuery.of(context).size.width * .75,
-              //     ),
-              //     Container(
-              //       color: Colors.orange,
-              //       height: MediaQuery.of(context).size.height * 2,
-              //       width: MediaQuery.of(context).size.width * .75,
-              //     ),
-              //   ],
-              // ),
+            color: Colors.pink,
+            child: GridView.count(
+              crossAxisCount: 3,
+              padding: const EdgeInsets.all(20),
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
+              primary: false,
+              children: [
+                FunitureWidget(),
+              ],
             ),
           ),
+          // Container(
+          //   height: MediaQuery.of(context).size.height * .7,
+          //   width: MediaQuery.of(context).size.width,
+          //   child: SingleChildScrollView(
+          //     child: Container(
+          //       height: MediaQuery.of(context).size.height * 3,
+          //       width: MediaQuery.of(context).size.width * .7,
+          //       child: GridView.count(
+          //         primary: false,
+          //         padding: const EdgeInsets.all(20),
+          //         crossAxisSpacing: 10,
+          //         mainAxisSpacing: 10,
+          //         crossAxisCount: 3,
+          //         children: [
+          //           FunitureWidget(),
+          //         ],
+          //       ),
+          //     ),
+          // Column(
+          //   children: [
+          //     Container(
+          //       color: Colors.amber,
+          //       height: MediaQuery.of(context).size.height * 2,
+          //       width: MediaQuery.of(context).size.width * .75,
+          //     ),
+          //     Container(
+          //       color: Colors.red,
+          //       height: MediaQuery.of(context).size.height * 2,
+          //       width: MediaQuery.of(context).size.width * .75,
+          //     ),
+          //     Container(
+          //       color: Colors.orange,
+          //       height: MediaQuery.of(context).size.height * 2,
+          //       width: MediaQuery.of(context).size.width * .75,
+          //     ),
+          //   ],
+          // ),
+          // ),
+          // ),
           Expanded(
             child: Container(),
           ),
