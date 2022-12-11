@@ -19,6 +19,7 @@ class _FunitureWidgetState extends State<FunitureWidget> {
     print('hi1');
     return ResponsiveLayoutWidget(
       mobile: FunitureMobileWidget(),
+      tablet: FunitureTabletWidget(),
       desktop: FunitureDesktopWidget(),
     );
     // return Container(
