@@ -17,6 +17,7 @@ class ResponsiveLayoutWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (((context, constraints) {
+        print(constraints.maxWidth);
         if (constraints.maxWidth < global.kTabletBreakPoint) {
           return mobile;
         } else if (constraints.maxWidth >= global.kTabletBreakPoint &&

@@ -17,17 +17,21 @@ class _FunitureWidgetState extends State<FunitureWidget> {
   @override
   Widget build(BuildContext context) {
     print('hi1');
-    return Container(
-      width: MediaQuery.of(context).size.width * .3,
-      height: MediaQuery.of(context).size.height * .3,
-      color: Colors.white,
-      child: Text(
-        'Testing',
-        style: TextStyle(
-          color: Colors.white,
-        ),
-      ),
+    return ResponsiveLayoutWidget(
+      mobile: FunitureMobileWidget(),
+      desktop: FunitureDesktopWidget(),
     );
+    // return Container(
+    //   width: MediaQuery.of(context).size.width * .3,
+    //   height: MediaQuery.of(context).size.height * .3,
+    //   color: Colors.white,
+    //   child: Text(
+    //     'Testing',
+    //     style: TextStyle(
+    //       color: Colors.white,
+    //     ),
+    //   ),
+    // );
     // return ResponsiveLayoutWidget(
     //   mobile: FunitureMobileWidget(),
     //   tablet: FunitureTabletWidget(),

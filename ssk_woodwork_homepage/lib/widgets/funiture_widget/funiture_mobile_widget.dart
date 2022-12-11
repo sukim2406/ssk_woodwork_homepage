@@ -10,6 +10,16 @@ class FunitureMobileWidget extends StatefulWidget {
 class _FunitureMobileWidgetState extends State<FunitureMobileWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      width: MediaQuery.of(context).size.width * .3,
+      height: MediaQuery.of(context).size.height * .3,
+      color: Colors.white,
+      child: Text(
+        'Testing',
+        style: TextStyle(
+          color: Colors.white,
+        ),
+      ),
+    );
   }
 }
