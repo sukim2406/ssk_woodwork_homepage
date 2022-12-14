@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../funiture_widget/funiture_widget.dart';
+
 class OriginalsMobileWidget extends StatefulWidget {
   const OriginalsMobileWidget({super.key});
 
@@ -26,21 +28,7 @@ class _OriginalsMobileWidgetState extends State<OriginalsMobileWidget> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Container(
-                    color: Colors.amber,
-                    height: MediaQuery.of(context).size.height * 2,
-                    width: MediaQuery.of(context).size.width * .75,
-                  ),
-                  Container(
-                    color: Colors.red,
-                    height: MediaQuery.of(context).size.height * 2,
-                    width: MediaQuery.of(context).size.width * .75,
-                  ),
-                  Container(
-                    color: Colors.orange,
-                    height: MediaQuery.of(context).size.height * 2,
-                    width: MediaQuery.of(context).size.width * .75,
-                  ),
+                  FunitureWidget(),
                 ],
               ),
             ),
