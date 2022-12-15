@@ -16,12 +16,16 @@ class FunitureWidget extends StatefulWidget {
 class _FunitureWidgetState extends State<FunitureWidget> {
   @override
   Widget build(BuildContext context) {
-    print('hi1');
-    return ResponsiveLayoutWidget(
-      mobile: FunitureMobileWidget(),
-      tablet: FunitureTabletWidget(),
-      desktop: FunitureDesktopWidget(),
+    return Container(
+      color: Colors.amber,
+      child: Text('testing'),
     );
+    // print('hi1');
+    // return ResponsiveLayoutWidget(
+    //   mobile: FunitureMobileWidget(),
+    //   tablet: FunitureTabletWidget(),
+    //   desktop: FunitureDesktopWidget(),
+    // );
     // return Container(
     //   width: MediaQuery.of(context).size.width * .3,
     //   height: MediaQuery.of(context).size.height * .3,

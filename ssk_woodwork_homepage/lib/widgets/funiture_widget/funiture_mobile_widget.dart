@@ -13,7 +13,7 @@ class _FunitureMobileWidgetState extends State<FunitureMobileWidget> {
     return Container(
       width: MediaQuery.of(context).size.width * .3,
       height: MediaQuery.of(context).size.height * .3,
-      color: Colors.black,
+      color: Colors.pink,
       child: Text(
         'Testing',
         style: TextStyle(
