@@ -28,6 +28,7 @@ class _OriginalsMobileWidgetState extends State<OriginalsMobileWidget> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
+                  Container(),
                   FunitureWidget(),
                 ],
               ),

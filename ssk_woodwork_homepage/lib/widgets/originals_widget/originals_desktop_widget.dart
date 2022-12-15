@@ -32,6 +32,8 @@ class _OriginalsDesktopWidgetState extends State<OriginalsDesktopWidget> {
               primary: false,
               children: [
                 FunitureWidget(),
+                FunitureWidget(),
+                FunitureWidget(),
               ],
             ),
           ),
