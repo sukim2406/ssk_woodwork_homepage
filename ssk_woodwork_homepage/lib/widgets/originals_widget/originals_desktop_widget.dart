@@ -25,7 +25,7 @@ class _OriginalsDesktopWidgetState extends State<OriginalsDesktopWidget> {
             width: MediaQuery.of(context).size.width,
             color: Colors.pink,
             child: GridView.count(
-              crossAxisCount: 3,
+              crossAxisCount: 5,
               padding: const EdgeInsets.all(20),
               crossAxisSpacing: 10,
               mainAxisSpacing: 10,

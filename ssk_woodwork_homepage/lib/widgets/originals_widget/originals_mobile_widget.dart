@@ -22,16 +22,20 @@ class _OriginalsMobileWidgetState extends State<OriginalsMobileWidget> {
             child: Container(),
           ),
           Container(
-            width: MediaQuery.of(context).size.width * .8,
-            height: MediaQuery.of(context).size.height * .8,
-            color: Colors.black,
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Container(),
-                  FunitureWidget(),
-                ],
-              ),
+            height: MediaQuery.of(context).size.height * .7,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.pink,
+            child: GridView.count(
+              crossAxisCount: 2,
+              padding: const EdgeInsets.all(20),
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
+              primary: false,
+              children: [
+                FunitureWidget(),
+                FunitureWidget(),
+                FunitureWidget(),
+              ],
             ),
           ),
           Expanded(
