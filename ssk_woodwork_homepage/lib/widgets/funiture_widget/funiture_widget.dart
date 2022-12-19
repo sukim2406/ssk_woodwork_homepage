@@ -18,7 +18,15 @@ class _FunitureWidgetState extends State<FunitureWidget> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.amber,
-      child: Text('testing'),
+      child: Column(
+        children: [
+          Container(
+            height: MediaQuery.of(context).size.height * .3,
+            color: Colors.black,
+          ),
+          Text('testing'),
+        ],
+      ),
     );
     // print('hi1');
     // return ResponsiveLayoutWidget(
