@@ -10,6 +10,17 @@ class FunitureTabletWidget extends StatefulWidget {
 class _FunitureTabletWidgetState extends State<FunitureTabletWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      color: Colors.blue,
+      child: Column(
+        children: [
+          Container(
+            height: MediaQuery.of(context).size.height * .35,
+            color: Colors.red,
+          ),
+          Text('Tablet'),
+        ],
+      ),
+    );
   }
 }

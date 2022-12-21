@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../funiture_widget/funiture_widget.dart';
+import '../funiture_widget/funiture_tablet_widget.dart';
 
 class OriginalsTabletWidget extends StatefulWidget {
   const OriginalsTabletWidget({super.key});
@@ -32,9 +32,9 @@ class _OriginalsTabletWidgetState extends State<OriginalsTabletWidget> {
               mainAxisSpacing: 10,
               primary: false,
               children: [
-                FunitureWidget(),
-                FunitureWidget(),
-                FunitureWidget(),
+                FunitureTabletWidget(),
+                FunitureTabletWidget(),
+                FunitureTabletWidget(),
               ],
             ),
           ),
