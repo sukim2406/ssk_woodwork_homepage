@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../funiture_widget/funiture_widget.dart';
+import '../funiture_widget/funiture_mobile_widget.dart';
 
 class OriginalsMobileWidget extends StatefulWidget {
   const OriginalsMobileWidget({super.key});
@@ -32,9 +32,9 @@ class _OriginalsMobileWidgetState extends State<OriginalsMobileWidget> {
               mainAxisSpacing: 10,
               primary: false,
               children: [
-                FunitureWidget(),
-                FunitureWidget(),
-                FunitureWidget(),
+                FunitureMobileWidget(),
+                FunitureMobileWidget(),
+                FunitureMobileWidget(),
               ],
             ),
           ),
