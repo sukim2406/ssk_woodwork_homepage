@@ -13,12 +13,16 @@ class _FunitureMobileWidgetState extends State<FunitureMobileWidget> {
     return Container(
       color: Colors.yellow,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
             height: MediaQuery.of(context).size.height * .3,
             color: Colors.orange,
           ),
-          Text('Mobile'),
+          Text(
+            'Mobile',
+            textAlign: TextAlign.center,
+          ),
         ],
       ),
     );
