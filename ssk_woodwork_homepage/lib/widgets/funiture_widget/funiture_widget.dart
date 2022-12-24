@@ -16,43 +16,10 @@ class FunitureWidget extends StatefulWidget {
 class _FunitureWidgetState extends State<FunitureWidget> {
   @override
   Widget build(BuildContext context) {
-    return ResponsiveLayoutWidget(
-      mobile: FunitureMobileWidget(),
-      desktop: FunitureDesktopWidget(),
+    return Container(
+      width: MediaQuery.of(context).size.width * .2,
+      height: MediaQuery.of(context).size.width * .4,
+      color: Colors.amber,
     );
-    // return Container(
-    //   color: Colors.amber,
-    //   child: Column(
-    //     children: [
-    //       Container(
-    //         height: MediaQuery.of(context).size.height * .2,
-    //         color: Colors.black,
-    //       ),
-    //       Text('testing'),
-    //     ],
-    //   ),
-    // );
-    // print('hi1');
-    // return ResponsiveLayoutWidget(
-    //   mobile: FunitureMobileWidget(),
-    //   tablet: FunitureTabletWidget(),
-    //   desktop: FunitureDesktopWidget(),
-    // );
-    // return Container(
-    //   width: MediaQuery.of(context).size.width * .3,
-    //   height: MediaQuery.of(context).size.height * .3,
-    //   color: Colors.white,
-    //   child: Text(
-    //     'Testing',
-    //     style: TextStyle(
-    //       color: Colors.white,
-    //     ),
-    //   ),
-    // );
-    // return ResponsiveLayoutWidget(
-    //   mobile: FunitureMobileWidget(),
-    //   tablet: FunitureTabletWidget(),
-    //   desktop: FunitureDesktopWidget(),
-    // );
   }
 }
