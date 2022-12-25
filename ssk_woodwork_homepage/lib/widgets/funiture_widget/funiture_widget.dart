@@ -20,6 +20,18 @@ class _FunitureWidgetState extends State<FunitureWidget> {
       width: MediaQuery.of(context).size.width * .2,
       height: MediaQuery.of(context).size.width * .4,
       color: Colors.amber,
+      child: Column(
+        children: [
+          Container(
+            height: MediaQuery.of(context).size.width * .05,
+            color: Colors.white,
+          ),
+          Container(
+            color: Colors.black,
+            height: MediaQuery.of(context).size.width * .1,
+          )
+        ],
+      ),
     );
   }
 }
