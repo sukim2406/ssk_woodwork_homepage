@@ -7,7 +7,11 @@ import '../funiture_widget/funiture_tablet_widget.dart';
 import '../funiture_widget/funiture_mobile_widget.dart';
 
 class FunitureWidget extends StatefulWidget {
-  const FunitureWidget({super.key});
+  final String text;
+  const FunitureWidget({
+    super.key,
+    required this.text,
+  });
 
   @override
   State<FunitureWidget> createState() => _FunitureWidgetState();
@@ -25,6 +29,7 @@ class _FunitureWidgetState extends State<FunitureWidget> {
           Container(
             height: MediaQuery.of(context).size.width * .05,
             color: Colors.white,
+            child: Text(widget.text),
           ),
           Container(
             color: Colors.black,
