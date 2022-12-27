@@ -32,9 +32,10 @@ class _OriginalsDesktopWidgetState extends State<OriginalsDesktopWidget> {
               mainAxisSpacing: 10,
               primary: false,
               children: [
-                FunitureDesktopWidget(),
-                FunitureDesktopWidget(),
-                FunitureWidget(text: 'desktop'),
+                FunitureWidget(text: 'desktop 1'),
+                FunitureWidget(text: 'desktop 2'),
+                FunitureWidget(text: 'desktop 3'),
+                FunitureWidget(text: 'desktop 4'),
               ],
             ),
           ),

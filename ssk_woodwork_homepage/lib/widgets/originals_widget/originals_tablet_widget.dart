@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ssk_woodwork_homepage/widgets/funiture_widget/funiture_widget.dart';
 
 import '../funiture_widget/funiture_tablet_widget.dart';
 
@@ -32,9 +33,10 @@ class _OriginalsTabletWidgetState extends State<OriginalsTabletWidget> {
               mainAxisSpacing: 10,
               primary: false,
               children: [
-                FunitureTabletWidget(),
-                FunitureTabletWidget(),
-                FunitureTabletWidget(),
+                FunitureWidget(text: 'Tablet 1'),
+                FunitureWidget(text: 'Tablet 2'),
+                FunitureWidget(text: 'Tablet 3'),
+                FunitureWidget(text: 'Tablet 4'),
               ],
             ),
           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ssk_woodwork_homepage/widgets/funiture_widget/funiture_widget.dart';
 
 import '../funiture_widget/funiture_mobile_widget.dart';
 
@@ -32,9 +33,10 @@ class _OriginalsMobileWidgetState extends State<OriginalsMobileWidget> {
               mainAxisSpacing: 10,
               primary: false,
               children: [
-                FunitureMobileWidget(),
-                FunitureMobileWidget(),
-                FunitureMobileWidget(),
+                FunitureWidget(text: 'mobile 1'),
+                FunitureWidget(text: 'mobile 2'),
+                FunitureWidget(text: 'mobile 3'),
+                FunitureWidget(text: 'mobile 4')
               ],
             ),
           ),
